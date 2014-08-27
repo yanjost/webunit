@@ -85,7 +85,7 @@ class WebFetcher:
         '''Set the Basic authentication information to the given username
         and password.
         '''
-        self.authinfo = base64.encodestring('%s:%s'%(username,
+        self.authinfo = base64.b64encode('%s:%s'%(username,
             password)).strip()
 
     #
